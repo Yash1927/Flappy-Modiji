@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Flappy Modi - A Flappy Bird Game with Modi Theme</title>
+  <meta name="description" content="Play Flappy Modi, a fun parody game based on Flappy Bird with a Modi theme. Navigate through pipes and set your high score in this addictive browser game.">
+
+  <!-- Additional meta tags -->
+  <meta name="author" content="Yash Rastogi">
+  <meta name="keywords" content="flappy modi, flappy bird, modi game, browser game, javascript game, html5 game">
+
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="Flappy Modi Game">
+  <meta property="og:description" content="A fun Flappy Bird parody with a Modi theme. Click to play now!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yashrastogi.github.io/flappy-modi/">
+  <meta property="og:image" content="https://yashrastogi.github.io/flappy-modi/screenshot.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flappy Modi Game">
+  <meta name="twitter:description" content="A fun Flappy Bird parody with a Modi theme. Click to play now!">
+  <meta name="twitter:image" content="https://yashrastogi.github.io/flappy-modi/screenshot.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    canvas {
+      display: block;
+    }
+    .loading {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      display: none;
+    }
+    @media (max-width: 600px) {
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+  <script src="game.js"></script>
+</head>
+<body>
+  <div class="loading" id="loading">Loading Flappy Modi...</div>
+  <noscript>You need to enable JavaScript to run this game.</noscript>
+
+  <script>
+    // Simple loading message handler
+    document.getElementById("loading").style.display = "block";
+    window.onload = function() {
+      document.getElementById("loading").style.display = "none";
+    };
+  </script>
+</body>
+</html>
